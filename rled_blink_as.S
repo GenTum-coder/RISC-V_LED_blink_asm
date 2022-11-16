@@ -1,12 +1,12 @@
 ###
-# for GD32VF103
+# for GD32VF103 (Sipeed Longan-nano-lite)
 #
 # from https://temofeev.ru/info/articles/izuchaem-risc-v-s-nulya-chast-1-assembler-i-soglasheniya/
 #
 # created and modfified 2022.11.15 by TGA
 # last modified 2022.11.16 by TGA
 # Compiling: 
-# riscv64-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -mcmodel=medany -nostdlib $1.S GD32VF103x8.lds -o $1.elf
+# riscv64-unknown-elf-gcc -march=rv32imac -mabi=ilp32 -mcmodel=medany -nostdlib -T GD32VF103x8.lds $1.S -o $1.elf
 # Flashing:
 # stm32flash -v -g 0x0 /dev/ttyUSB0 -w $1.bin
 ###
